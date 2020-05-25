@@ -22,7 +22,7 @@ hbs.registerPartials(partialsPath);
 const public_dir_path = path.join(__dirname,'../public');
 app.use(express.static(public_dir_path));
 
-app.get('',(req,res)=>{
+app.get('/',(req,res)=>{
   res.render('index',{
     title:'Home',
     heading:'This is the heading'

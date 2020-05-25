@@ -5,6 +5,8 @@ const hbs = require('hbs');
 
 const app = express();
 
+const port = process.env.PORT || 3000
+
 // setting view enginee
 app.set('view engine','hbs');
 
@@ -34,6 +36,6 @@ app.get('/help',(req,res)=>{
   res.render('help');
 });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
   console.log('server is running');
 });

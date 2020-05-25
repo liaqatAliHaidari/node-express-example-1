@@ -5,7 +5,7 @@ const hbs = require('hbs');
 
 const app = express();
 
-// setting view engine
+// setting view enginee
 app.set('view engine','hbs');
 
 // setting views path
